@@ -1,0 +1,92 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: black;
+    font-family: 'Sono', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background-image: url('https://source.unsplash.com/random/1600x900/?weather');
+}
+
+.background {
+    background: rgba(19, 19, 19, 0.9);
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 450px;
+    margin: 1em;
+}
+
+.temp {
+    margin: 0;
+    font-size: 150%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input.searchBar {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    background: rgba(70, 70, 70, 0.3);
+    color: white;
+    font-family: inherit;
+    font-size: 110%;
+    width: calc(100% - 100px);
+}
+
+button {
+    margin: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    height: 45px;
+    width: 45px;
+    background: rgba(70, 70, 70, 0.5);
+    color: white;
+}
+
+button:hover {
+    background: rgba(92, 92, 92, 0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+  
+.flex {
+    display: flex;
+    align-items: center;
+}
+  
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+  
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
